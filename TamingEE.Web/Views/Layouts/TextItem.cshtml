@@ -1,0 +1,12 @@
+﻿@model Sitecore.Data.Items.Item
+
+<div>
+   @if (Model != null)
+   {
+      @Model.Fields["Text"];
+   }
+   else
+   {
+      <span>null model</span>
+   }
+</div>

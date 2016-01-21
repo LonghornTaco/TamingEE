@@ -1,0 +1,12 @@
+﻿@using DynamicPlaceholders.Mvc.Extensions
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-6">
+         @Html.Sitecore().DynamicPlaceholder("two-column-left")
+      </div>
+      <div class="col-md-6">
+         @Html.Sitecore().DynamicPlaceholder("two-column-right")
+      </div>
+   </div>
+</div>
