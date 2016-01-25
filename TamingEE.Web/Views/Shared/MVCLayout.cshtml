@@ -8,8 +8,9 @@
    @* @Html.Sitecore().VisitorIdentification() *@
 
    <link href="~/Content/bootstrap.css" rel="stylesheet">
+   <link href="~/Content/editor.css" rel="stylesheet">
 </head>
-<body>
+<body class="@(Sitecore.Context.PageMode.IsPageEditor ? "edit-mode" : string.Empty)">
    <h1>@Html.Sitecore().Field("title")</h1>
    <div>
       @Html.Sitecore().Placeholder("main")
