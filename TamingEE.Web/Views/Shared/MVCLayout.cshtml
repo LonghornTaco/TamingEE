@@ -10,9 +10,9 @@
    <link href="~/Content/bootstrap.css" rel="stylesheet">
    <link href="~/Content/editor.css" rel="stylesheet">
 </head>
-<body class="@(Sitecore.Context.PageMode.IsPageEditor ? "edit-mode" : string.Empty)">
+<body class="@(Sitecore.Context.PageMode.IsPageEditor ? "edit-mode" : string.Empty)" style="margin-left:100px;margin-right:100px;">
    <h1>@Html.Sitecore().Field("title")</h1>
-   <div>
+   <div >
       @Html.Sitecore().Placeholder("main")
    </div>
 </body>

@@ -27,6 +27,11 @@ namespace TamingEE.Web.Controllers
          return View();
       }
 
+      public ViewResult TwoColumnRow()
+      {
+         return View();
+      }
+
       public ViewResult TextItem()
       {
          Item item = null;

@@ -53,12 +53,9 @@
     <Compile Include="Exceptions\RenderingParametersException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RenderingWrapper\AddEditorRenderingWrapper.cs" />
-    <Compile Include="RenderingWrapper\AddRenderingWrapper.cs" />
     <Compile Include="RenderingWrapper\EditorRenderingWrapper.cs" />
     <Compile Include="RenderingWrapper\EndEditorRenderingWrapper.cs" />
-    <Compile Include="RenderingWrapper\EndRenderingWrapper.cs" />
     <Compile Include="RenderingWrapper\Markers\EditorComponentRenderingMarker.cs" />
-    <Compile Include="RenderingWrapper\RenderingWrapper.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
