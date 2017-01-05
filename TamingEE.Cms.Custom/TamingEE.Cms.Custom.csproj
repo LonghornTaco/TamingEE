@@ -31,13 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\..\..\inetpub\wwwroot\Sitecore\TamingEE\Website\bin\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\_lib\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
-      <HintPath>..\..\..\..\inetpub\wwwroot\Sitecore\TamingEE\Website\bin\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\_lib\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc.ExperienceEditor">
-      <HintPath>..\..\..\..\inetpub\wwwroot\Sitecore\TamingEE\Website\bin\Sitecore.Mvc.ExperienceEditor.dll</HintPath>
+      <HintPath>..\_lib\Sitecore.Mvc.ExperienceEditor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,9 +52,13 @@
     <Compile Include="Exceptions\DatasourceNotSetException.cs" />
     <Compile Include="Exceptions\RenderingParametersException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenderingWrapper\AddEditorPlaceholderWrapper.cs" />
     <Compile Include="RenderingWrapper\AddEditorRenderingWrapper.cs" />
+    <Compile Include="RenderingWrapper\EditorPlaceholderWrapper.cs" />
     <Compile Include="RenderingWrapper\EditorRenderingWrapper.cs" />
+    <Compile Include="RenderingWrapper\EndEditorPlaceholderWrapper.cs" />
     <Compile Include="RenderingWrapper\EndEditorRenderingWrapper.cs" />
+    <Compile Include="RenderingWrapper\Markers\EditorComponentPlaceholderMarker.cs" />
     <Compile Include="RenderingWrapper\Markers\EditorComponentRenderingMarker.cs" />
   </ItemGroup>
   <ItemGroup />
